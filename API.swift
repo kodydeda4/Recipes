@@ -34,7 +34,9 @@ extension API {
         self.models.remove(id: modelID)
       }
     }
+    
     let actor = ActorState()
+    
     return Self(
       models: {
         AsyncStream { continuation in

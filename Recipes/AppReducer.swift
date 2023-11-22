@@ -113,8 +113,13 @@ struct RecipeList {
         return .none
         
       case let .delete(model: id):
+        let isSelected = state.details?.id == id
         return .run { send in
           await self.api.delete(id)
+          
+          if isSelected {
+            await send(.showDetails(for: nil))
+          }
         }
         
       case let .showDetails(for: modelID):
