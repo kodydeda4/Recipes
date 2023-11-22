@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		332C593B2B0E4B1800F36CCA /* RecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C593A2B0E4B1800F36CCA /* RecipesApp.swift */; };
-		332C593D2B0E4B1800F36CCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C593C2B0E4B1800F36CCA /* ContentView.swift */; };
+		332C593B2B0E4B1800F36CCA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C593A2B0E4B1800F36CCA /* Main.swift */; };
+		332C593D2B0E4B1800F36CCA /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C593C2B0E4B1800F36CCA /* AppReducer.swift */; };
 		332C593F2B0E4B1900F36CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332C593E2B0E4B1900F36CCA /* Assets.xcassets */; };
 		332C59422B0E4B1900F36CCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332C59412B0E4B1900F36CCA /* Preview Assets.xcassets */; };
-		332C594C2B0E4B1900F36CCA /* RecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C594B2B0E4B1900F36CCA /* RecipesTests.swift */; };
-		332C59562B0E4B1900F36CCA /* RecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C59552B0E4B1900F36CCA /* RecipesUITests.swift */; };
-		332C59582B0E4B1900F36CCA /* RecipesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C59572B0E4B1900F36CCA /* RecipesUITestsLaunchTests.swift */; };
+		332C594C2B0E4B1900F36CCA /* AppReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C594B2B0E4B1900F36CCA /* AppReducerTests.swift */; };
+		332C59662B0E4B8F00F36CCA /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 332C59652B0E4B8F00F36CCA /* ComposableArchitecture */; };
+		332C59682B0E4F1100F36CCA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332C59672B0E4F1100F36CCA /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,26 +24,17 @@
 			remoteGlobalIDString = 332C59362B0E4B1800F36CCA;
 			remoteInfo = Recipes;
 		};
-		332C59522B0E4B1900F36CCA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 332C592F2B0E4B1800F36CCA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 332C59362B0E4B1800F36CCA;
-			remoteInfo = Recipes;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		332C59372B0E4B1800F36CCA /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		332C593A2B0E4B1800F36CCA /* RecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesApp.swift; sourceTree = "<group>"; };
-		332C593C2B0E4B1800F36CCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		332C593A2B0E4B1800F36CCA /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		332C593C2B0E4B1800F36CCA /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		332C593E2B0E4B1900F36CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		332C59412B0E4B1900F36CCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		332C59472B0E4B1900F36CCA /* RecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		332C594B2B0E4B1900F36CCA /* RecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTests.swift; sourceTree = "<group>"; };
-		332C59512B0E4B1900F36CCA /* RecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		332C59552B0E4B1900F36CCA /* RecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesUITests.swift; sourceTree = "<group>"; };
-		332C59572B0E4B1900F36CCA /* RecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		332C594B2B0E4B1900F36CCA /* AppReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducerTests.swift; sourceTree = "<group>"; };
+		332C59672B0E4F1100F36CCA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				332C59662B0E4B8F00F36CCA /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		332C59442B0E4B1900F36CCA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		332C594E2B0E4B1900F36CCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,9 +59,9 @@
 		332C592E2B0E4B1800F36CCA = {
 			isa = PBXGroup;
 			children = (
+				332C59672B0E4F1100F36CCA /* API.swift */,
 				332C59392B0E4B1800F36CCA /* Recipes */,
 				332C594A2B0E4B1900F36CCA /* RecipesTests */,
-				332C59542B0E4B1900F36CCA /* RecipesUITests */,
 				332C59382B0E4B1800F36CCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +71,6 @@
 			children = (
 				332C59372B0E4B1800F36CCA /* Recipes.app */,
 				332C59472B0E4B1900F36CCA /* RecipesTests.xctest */,
-				332C59512B0E4B1900F36CCA /* RecipesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +78,8 @@
 		332C59392B0E4B1800F36CCA /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				332C593A2B0E4B1800F36CCA /* RecipesApp.swift */,
-				332C593C2B0E4B1800F36CCA /* ContentView.swift */,
+				332C593A2B0E4B1800F36CCA /* Main.swift */,
+				332C593C2B0E4B1800F36CCA /* AppReducer.swift */,
 				332C593E2B0E4B1900F36CCA /* Assets.xcassets */,
 				332C59402B0E4B1900F36CCA /* Preview Content */,
 			);
@@ -113,18 +97,9 @@
 		332C594A2B0E4B1900F36CCA /* RecipesTests */ = {
 			isa = PBXGroup;
 			children = (
-				332C594B2B0E4B1900F36CCA /* RecipesTests.swift */,
+				332C594B2B0E4B1900F36CCA /* AppReducerTests.swift */,
 			);
 			path = RecipesTests;
-			sourceTree = "<group>";
-		};
-		332C59542B0E4B1900F36CCA /* RecipesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				332C59552B0E4B1900F36CCA /* RecipesUITests.swift */,
-				332C59572B0E4B1900F36CCA /* RecipesUITestsLaunchTests.swift */,
-			);
-			path = RecipesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +118,9 @@
 			dependencies = (
 			);
 			name = Recipes;
+			packageProductDependencies = (
+				332C59652B0E4B8F00F36CCA /* ComposableArchitecture */,
+			);
 			productName = Recipes;
 			productReference = 332C59372B0E4B1800F36CCA /* Recipes.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +143,6 @@
 			productReference = 332C59472B0E4B1900F36CCA /* RecipesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		332C59502B0E4B1900F36CCA /* RecipesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 332C59612B0E4B1900F36CCA /* Build configuration list for PBXNativeTarget "RecipesUITests" */;
-			buildPhases = (
-				332C594D2B0E4B1900F36CCA /* Sources */,
-				332C594E2B0E4B1900F36CCA /* Frameworks */,
-				332C594F2B0E4B1900F36CCA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				332C59532B0E4B1900F36CCA /* PBXTargetDependency */,
-			);
-			name = RecipesUITests;
-			productName = RecipesUITests;
-			productReference = 332C59512B0E4B1900F36CCA /* RecipesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +160,6 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 332C59362B0E4B1800F36CCA;
 					};
-					332C59502B0E4B1900F36CCA = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 332C59362B0E4B1800F36CCA;
-					};
 				};
 			};
 			buildConfigurationList = 332C59322B0E4B1800F36CCA /* Build configuration list for PBXProject "Recipes" */;
@@ -215,13 +171,15 @@
 				Base,
 			);
 			mainGroup = 332C592E2B0E4B1800F36CCA;
+			packageReferences = (
+				332C59642B0E4B8F00F36CCA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 332C59382B0E4B1800F36CCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				332C59362B0E4B1800F36CCA /* Recipes */,
 				332C59462B0E4B1900F36CCA /* RecipesTests */,
-				332C59502B0E4B1900F36CCA /* RecipesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +201,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		332C594F2B0E4B1900F36CCA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332C593D2B0E4B1800F36CCA /* ContentView.swift in Sources */,
-				332C593B2B0E4B1800F36CCA /* RecipesApp.swift in Sources */,
+				332C593D2B0E4B1800F36CCA /* AppReducer.swift in Sources */,
+				332C593B2B0E4B1800F36CCA /* Main.swift in Sources */,
+				332C59682B0E4F1100F36CCA /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332C594C2B0E4B1900F36CCA /* RecipesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		332C594D2B0E4B1900F36CCA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				332C59582B0E4B1900F36CCA /* RecipesUITestsLaunchTests.swift in Sources */,
-				332C59562B0E4B1900F36CCA /* RecipesUITests.swift in Sources */,
+				332C594C2B0E4B1900F36CCA /* AppReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +229,6 @@
 			isa = PBXTargetDependency;
 			target = 332C59362B0E4B1800F36CCA /* Recipes */;
 			targetProxy = 332C59482B0E4B1900F36CCA /* PBXContainerItemProxy */;
-		};
-		332C59532B0E4B1900F36CCA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 332C59362B0E4B1800F36CCA /* Recipes */;
-			targetProxy = 332C59522B0E4B1900F36CCA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -512,42 +450,6 @@
 			};
 			name = Release;
 		};
-		332C59622B0E4B1900F36CCA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ME637H7ZM9;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deda.RecipesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Recipes;
-			};
-			name = Debug;
-		};
-		332C59632B0E4B1900F36CCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ME637H7ZM9;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deda.RecipesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Recipes;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,16 +480,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		332C59612B0E4B1900F36CCA /* Build configuration list for PBXNativeTarget "RecipesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				332C59622B0E4B1900F36CCA /* Debug */,
-				332C59632B0E4B1900F36CCA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		332C59642B0E4B8F00F36CCA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		332C59652B0E4B8F00F36CCA /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 332C59642B0E4B8F00F36CCA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 332C592F2B0E4B1800F36CCA /* Project object */;
 }
